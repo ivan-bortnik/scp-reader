@@ -1,12 +1,13 @@
 <script setup>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faMugSaucer } from '@fortawesome/free-solid-svg-icons';
+import Header from './components/Header.vue';
+import DocumentReader from './components/DocumentReader/DocumentReader.vue';
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">
-    Hello world! <FontAwesomeIcon :icon="faMugSaucer" />
-  </h1>
+  <div class="flex flex-col h-screen w-screen">
+    <Header />
+    <DocumentReader />
+  </div>
 </template>
 
 <style scoped>
